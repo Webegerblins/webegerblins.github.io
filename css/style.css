@@ -1,7 +1,7 @@
 /* General Reset */
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Cinzel Decorative', serif;
     background-color: #121212;
     color: #f0f0f0;
     line-height: 1.6;
@@ -10,17 +10,12 @@ body {
 /* Decorative Borders */
 .decorative-border {
     width: 100%;
+    height: auto;
+    max-height: 80px; /* Keeps border proportional */
     display: block;
-}
-
-.top-border {
-    position: relative;
-    top: 0;
-}
-
-.bottom-border {
-    position: relative;
-    bottom: 0;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
 }
 
 /* Header with Title Image */
@@ -35,48 +30,84 @@ body {
     height: auto;
 }
 
-/* Navigation Styling */
-.site-nav {
-    background: #333;
-    padding: 10px 0;
+/* Sidebar Navigation */
+.sidebar {
+    position: fixed;
+    top: 80px; /* Below top border */
+    left: 0;
+    width: 200px;
+    background: #222;
+    color: #fff;
+    padding: 15px;
+    height: calc(100% - 80px);
+    overflow-y: auto;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
 }
 
-.site-nav ul {
+.sidebar ul {
     list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
     padding: 0;
 }
 
-.site-nav ul li {
-    margin: 0 15px;
+.sidebar ul li {
+    margin: 10px 0;
 }
 
-.site-nav ul li a {
-    color: #f0f0f0;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.site-nav ul li a:hover {
+.sidebar ul li a {
     color: #4CAF50;
+    text-decoration: none;
 }
 
-/* Hero Section */
-.hero {
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Table of Contents */
+.toc {
     text-align: center;
-    padding: 50px 20px;
-    background: url('../images/moon_background.jpg') no-repeat center center/cover;
+    margin: 20px auto;
+    background: #333;
+    padding: 20px;
+    color: #fff;
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.hero h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
+.toc ul {
+    list-style: none;
+    padding: 0;
 }
 
-.hero p {
-    font-size: 1.2rem;
-    margin: 0 auto;
-    max-width: 600px;
+.toc ul li {
+    margin: 10px 0;
+}
+
+.toc ul li a {
+    color: #f4b400; /* Pathfinder gold accent */
+    text-decoration: none;
+}
+
+.toc ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section Boxes */
+.section-box {
+    border: 2px solid #4CAF50;
+    padding: 20px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    border-radius: 8px;
+}
+
+/* Footer */
+.site-footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: #f0f0f0;
+    border-top: 2px solid #4CAF50;
 }
