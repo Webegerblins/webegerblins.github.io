@@ -1,0 +1,82 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #f0f0f0;
+    line-height: 1.6;
+}
+
+/* Decorative Borders */
+.decorative-border {
+    width: 100%;
+    display: block;
+}
+
+.top-border {
+    position: relative;
+    top: 0;
+}
+
+.bottom-border {
+    position: relative;
+    bottom: 0;
+}
+
+/* Header with Title Image */
+.site-header {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to bottom, #4CAF50, #2E8B57);
+}
+
+.title-image {
+    max-width: 80%;
+    height: auto;
+}
+
+/* Navigation Styling */
+.site-nav {
+    background: #333;
+    padding: 10px 0;
+}
+
+.site-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav ul li {
+    margin: 0 15px;
+}
+
+.site-nav ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.site-nav ul li a:hover {
+    color: #4CAF50;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: url('../images/moon_background.jpg') no-repeat center center/cover;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 0 auto;
+    max-width: 600px;
+}
