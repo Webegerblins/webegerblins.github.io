@@ -2,20 +2,20 @@
 body {
     margin: 0;
     font-family: 'Cinzel Decorative', serif;
-    background-color: #121212;
+    background-color: #1a1a1a; /* Darker fantasy vibe */
     color: #f0f0f0;
-    line-height: 1.6;
+    line-height: 1.8;
 }
 
 /* Decorative Borders */
 .decorative-border {
     width: 100%;
     height: auto;
-    max-height: 80px; /* Keeps border proportional */
+    max-height: 40px; /* Adjusted for proportional size */
     display: block;
-    object-fit: cover;
     margin: 0;
     padding: 0;
+    object-fit: cover;
 }
 
 /* Header with Title Image */
@@ -26,22 +26,25 @@ body {
 }
 
 .title-image {
-    max-width: 80%;
+    max-width: 70%;
     height: auto;
+    margin: 0 auto;
+    display: block;
 }
 
 /* Sidebar Navigation */
 .sidebar {
     position: fixed;
-    top: 80px; /* Below top border */
+    top: 40px; /* Below the top border */
     left: 0;
-    width: 200px;
-    background: #222;
+    width: 220px;
+    background: #2e2e2e;
     color: #fff;
     padding: 15px;
-    height: calc(100% - 80px);
+    height: calc(100% - 40px);
     overflow-y: auto;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    border-right: 2px solid #4CAF50;
 }
 
 .sidebar ul {
@@ -56,39 +59,10 @@ body {
 .sidebar ul li a {
     color: #4CAF50;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .sidebar ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Table of Contents */
-.toc {
-    text-align: center;
-    margin: 20px auto;
-    background: #333;
-    padding: 20px;
-    color: #fff;
-    border: 2px solid #4CAF50;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.toc ul {
-    list-style: none;
-    padding: 0;
-}
-
-.toc ul li {
-    margin: 10px 0;
-}
-
-.toc ul li a {
-    color: #f4b400; /* Pathfinder gold accent */
-    text-decoration: none;
-}
-
-.toc ul li a:hover {
     text-decoration: underline;
 }
 
@@ -97,9 +71,21 @@ body {
     border: 2px solid #4CAF50;
     padding: 20px;
     margin: 20px auto;
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to bottom, #222, #333);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
     max-width: 800px;
+    border-radius: 10px;
+    color: #f4f4f4;
+}
+
+/* Table of Contents */
+.toc {
+    text-align: center;
+    margin: 20px auto;
+    border: 2px solid #f4b400;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #f0f0f0;
     border-radius: 8px;
 }
 
